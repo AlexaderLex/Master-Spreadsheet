@@ -7,10 +7,10 @@ containersArray.forEach(arr => {
     let tableEl = localStorage.getItem(arr);
     let tableArr = tableEl.split(",");
     // console.log(tableArr[0]);
-    console.log(arr);
+    // console.log(arr);
 });
 
-console.log(containersArray);
+// console.log(containersArray);
 
 let tableSourceArray = [];
 function getTableContent() {
@@ -36,7 +36,7 @@ function tableContent(el) {
 }
 
 const activeTable = document.querySelector(".active");
-console.log(activeTable);
+// console.log(activeTable);
 
 const activeTableCells = activeTable.querySelectorAll(".t-cell");
 let selectedValues = [];
