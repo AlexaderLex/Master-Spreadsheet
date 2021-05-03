@@ -1,0 +1,15 @@
+ .table {
+     border: 1px solid black;
+     width: 90vw;
+     margin: 2em auto;
+ }
+ 
+ th {
+     border: 1px solid red;
+     min-width: 40px;
+ }
+ 
+ td {
+     border: 1px solid blue;
+     min-width: 40px;
+ }

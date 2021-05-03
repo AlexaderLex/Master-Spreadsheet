@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Master Spreadsheets</title>
+    <link rel="stylesheet" href="fonts/MonotypeCorsiva/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Poppins/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/test-1.js" defer></script>
+    <script src="js/colors-2.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/to-blob.js" defer></script>
+    <script src="js/read-file.js" defer></script>
+    <script src="js/cell-function.js" defer></script>
+</head>
+
+<body>
+
+    <!-- <h1>My First Master Spreadsheet</h1> -->
+
+    <nav id="nav">
+        <ul>
+            <li><a href="page/test-1.html" target="_blank">Test 1</a></li>
+            <li>
+                <a href="page/test-2.html" target="_blank">Test 2</a>
+            </li>
+            <li>
+                <a href="page/test-3.html" target="_blank">Test 3</a>
+            </li>
+            <li>
+                <a href="page/test-4.html" target="_blank">Test 4</a>
+            </li>
+            <li>
+                <a href="page/test-5.html" target="_blank">Test 5</a>
+            </li>
+            <li>
+                <a href="page/sancomf.html" target="_blank">Sancomf</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="form-div">
+        <label for="row-number">Number of rows</label>
+        <input id="row-number" type="number" value="20" min="1" max="101">
+        <label for="col-number">Number of columns</label>
+        <input id="col-number" type="number" value="20" min="1" max="101">
+        <label for="table-name">Table Name</label>
+        <input id="table-name" type="text" placeholder="Enter table name">
+        <button id="create-btn">Create Table</button>
+        <button id="cancel">Cancel</button>
+
+    </div>
+    <div id="del-div">
+        <button class="yes-btn">Yes</button>
+        <button id="del">Delete this table?</button>
+        <button class="no-btn">No</button>
+    </div>
+
+    <form id="color-themes">
+        <label for="pallet-list">Themes</label>
+        <select name="pallets" id="pallet-list">
+        <option value="">Choose Theme</option>
+        
+        </select>
+    </form>
+
+
+
+    <div class="content">
+        <div class="content-wrapper">
+
+        </div>
+    </div>
+    <div class="drop-div">
+        <div>
+            <h2 style="color: deepskyblue">Choose your file here</h2>
+            <input type="file" id="upload-file" onChange="readFile(this)">
+        </div>
+        <h2>OR</h2>
+        <div>
+            <h2 style="color: lightskyblue">Drag and Drop you CSV file Here</h2>
+            <div id="holder"></div>
+            <p id="status"></p>
+        </div>
+        <button id="last-click">See your Table</button>
+    </div>
+
+
+
+
+
+    <template>
+        <div class="table-header">
+        
+       <h2 class="table-title">Table</h2>
+            <div class="buttons">
+                <button class="save" id="save-1" onClick="window.location.reload(true)">Save This Table</button>
+                <button class="clean">Clean</button>
+            </div>
+
+            <div class="panel" id="panel-1">
+            <div class="address-div">
+                <input class="address" id="address-1" class="cell-address" type="text" placeholder="cell address"></input>
+            </div>
+            <div class="text-div">
+                <input class="text" id="text-1" type="text" placeholder="cell content"></input>
+            </div>
+            <div class="color-div">
+                <input class="color" id="color-1" type="color" placeholder="font color"></input>
+            </div>
+             <div class="bg-color-div">
+                <input class="bg-color" id="bg-color-1" type="text" placeholder="cell background"></input>
+            </div>
+            <div class="font-div">
+                <input class="font" id="font-1" type="text" placeholder="cell font"></input>
+            </div>
+        </div>
+        <!-- panel -->
+        </div>
+      
+        <!-- table header   -->`;
+			<table id="" class="table" role="table" name="table-one">
+            <thead>
+                <tr class="first">
+                    <th><span></span></th>
+                    <th><span></span></th>
+                    
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td><span class="t-cell" contenteditable="true"></span></td>
+                    <td><span class="t-cell" contenteditable="true"></span></td>
+                   
+                </tr>
+            </tbody>
+
+        </table>
+		</template>
+</body>
+
+</html>

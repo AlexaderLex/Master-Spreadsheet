@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table {
+    margin: 2em 1em;
+    border-collapse: collapse;
+    width: auto;
+    outline: 6px double steelblue;
+    outline-offset: 8px;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+th,
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+span {
+    background-color: #0ff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
